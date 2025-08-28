@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        /* Layout for form */
+        form {
+            display: grid;
+            gap: 1.5rem;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 1.5rem;
+        }
+        legend {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #34495e;
+            padding: 0 0.5rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+            padding: 0.8em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        input:not([type="radio"]):not([type="checkbox"]):focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+        .submit-button {
+            padding: 1em 2em;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-button:hover {
+            background-color: #2980b9;
+        }
+        .media-container {
+            margin: 2rem 0;
+            display: grid;
+            gap: 1.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Enhanced Web Page Showcase</h1>
+        <p>This page demonstrates the effective use of lists, tables, and media, followed by a complete and accessible HTML5 form.</p>
+
+        <hr>
+
+        <h2>Product Features & Specifications</h2>
+        
+        <h3>Key Features</h3>
+        <ul>
+            <li>Intuitive and user-friendly interface.</li>
+            <li>Robust data validation without JavaScript.</li>
+            <li>Responsive design for all devices.</li>
+            <li>Seamless integration with modern browsers.</li>
+        </ul>
+
+        <h3>Step-by-Step Guide</h3>
+        <ol>
+            <li>Navigate to the form section below.</li>
+            <li>Fill out all the required fields.</li>
+            <li>Ensure all validation rules are met.</li>
+            <li>Click the submit button to finish.</li>
+        </ol>
+
+        <h3>Product Data Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>In Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P101</td>
+                    <td>Wireless Mouse</td>
+                    <td>$25.00</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>P102</td>
+                    <td>Mechanical Keyboard</td>
+                    <td>$89.99</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>P103</td>
+                    <td>4K Monitor</td>
+                    <td>$349.00</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Multimedia Content</h2>
+        <div class="media-container">
+            <div>
+                <h3>An Informative Image</h3>
+                <img src="https://via.placeholder.com/600x400?text=Placeholder+Image" alt="A placeholder image for demonstration purposes">
+            </div>
+
+            <div>
+                <h3>Background Audio</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div>
+                <h3>Demonstration Video</h3>
+                <video controls autoplay muted>
+                    <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Complete HTML5 Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g., Jane Doe" minlength="3">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com" autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g., 555-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth:</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Choose a Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Must be at least 8 characters">
+                </div>
+                
+                <div class="form-group">
+                    <label for="readonlyField">Read-only Field:</label>
+                    <input type="text" id="readonlyField" value="This field cannot be edited" readonly>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Subscription Details</legend>
+
+                <div class="form-group">
+                    <label for="numMembers">Number of Members:</label>
+                    <input type="number" id="numMembers" name="numMembers" min="1" max="10" value="1" required>
+                </div>
+
+                <div>
+                    <p>Subscription Plan:</p>
+                    <input type="radio" id="basic" name="plan" value="basic" required>
+                    <label for="basic">Basic Plan</label><br>
+                    <input type="radio" id="premium" name="plan" value="premium">
+                    <label for="premium">Premium Plan</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">I want to receive the newsletter.</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter any extra comments here..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Submit Form</button>
+        </form>
+    </main>
+</body>
+</html>
